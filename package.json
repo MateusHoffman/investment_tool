@@ -1,0 +1,15 @@
+{
+  "name": "investment_tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MateusHoffman/investment_tool.git",
+  "author": "Hoffman <mateushoffmandev@gmail.com>",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "lru-cache": "^11.0.1",
+    "moment": "^2.30.1",
+    "moment-duration-format": "^2.3.2",
+    "p-throttle": "^6.2.0"
+  }
+}
