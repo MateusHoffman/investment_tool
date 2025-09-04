@@ -3,7 +3,7 @@ import fs from "fs/promises"; // Importa o módulo fs para manipulação de arqu
 import moment from "moment";
 import "moment-duration-format";
 
-const MAX_CONCURRENT_REQUESTS = 1; // Aumentado para permitir mais requisições simultâneas
+const MAX_CONCURRENT_REQUESTS = 1; //https://www.conventionalcommits.org/en/v1.0.0/
 const cache = new Map();
 
 async function fetchAPI(url, options) {
@@ -122,6 +122,8 @@ async function withConcurrencyLimit(tasks, limit) {
 (async () => {
   const startTime = performance.now();
   // const allTickers = await fetchTickers();
+
+  //ATUALIZAR MANUALMENTE A CADA 30 DIAS
   const allTickers = JSON.parse(
     await fs.readFile("data/allTickers.json", "utf-8")
   );

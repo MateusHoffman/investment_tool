@@ -1,0 +1,102 @@
+[
+  {
+    "ticker": "BRSR6",
+    "currentPrice": 11.38,
+    "currentDividend": 0.05772,
+    "bestPrice": 10.95,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 3.78,
+    "haveOptions": true,
+    "scoreByBestPrice": 244
+  },
+  {
+    "ticker": "GRND3",
+    "currentPrice": 5.3,
+    "currentDividend": 0.05766,
+    "bestPrice": 5.09,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 3.96,
+    "haveOptions": true,
+    "scoreByBestPrice": 392
+  },
+  {
+    "ticker": "CMIG4",
+    "currentPrice": 10.84,
+    "currentDividend": 0.05667,
+    "bestPrice": 10.24,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 5.54,
+    "haveOptions": true,
+    "scoreByBestPrice": 303
+  },
+  {
+    "ticker": "TAEE11",
+    "currentPrice": 33.7,
+    "currentDividend": 0.0561,
+    "bestPrice": 31.51,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 6.5,
+    "haveOptions": true,
+    "scoreByBestPrice": 361
+  },
+  {
+    "ticker": "SANB3",
+    "currentPrice": 12.97,
+    "currentDividend": 0.05431,
+    "bestPrice": 11.74,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 9.48,
+    "haveOptions": true,
+    "scoreByBestPrice": 193
+  },
+  {
+    "ticker": "BBSE3",
+    "currentPrice": 31.88,
+    "currentDividend": 0.05159,
+    "bestPrice": 27.41,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 14.02,
+    "haveOptions": true,
+    "scoreByBestPrice": 217
+  },
+  {
+    "ticker": "BBDC3",
+    "currentPrice": 13.98,
+    "currentDividend": 0.04598,
+    "bestPrice": 10.71,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 23.39,
+    "haveOptions": true,
+    "scoreByBestPrice": 391
+  },
+  {
+    "ticker": "ITSA4",
+    "currentPrice": 11,
+    "currentDividend": 0.04571,
+    "bestPrice": 8.38,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 23.82,
+    "haveOptions": true,
+    "scoreByBestPrice": 203
+  },
+  {
+    "ticker": "ABEV3",
+    "currentPrice": 12.22,
+    "currentDividend": 0.04419,
+    "bestPrice": 9,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 26.35,
+    "haveOptions": true,
+    "scoreByBestPrice": 113
+  },
+  {
+    "ticker": "EGIE3",
+    "currentPrice": 39.54,
+    "currentDividend": 0.04362,
+    "bestPrice": 28.74,
+    "bestDividend": 0.06,
+    "distanceBetweenPrices": 27.31,
+    "haveOptions": true,
+    "scoreByBestPrice": 254
+  }
+]

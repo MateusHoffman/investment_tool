@@ -10,6 +10,12 @@ import fs from "fs/promises";
 import moment from "moment";
 import "moment-duration-format";
 
+const obterAnoAnterior = () => {
+  const anoAtual = new Date().getFullYear();
+  const anoAnterior = anoAtual - 1;
+  return anoAnterior;
+};
+
 (async () => {
   const startTime = performance.now();
 
@@ -24,13 +30,16 @@ import "moment-duration-format";
 
   let stocks = allStocks;
 
-  const requiredYears = Array.from({ length: 10 }, (_, i) => 2023 - i);
+  const requiredYears = Array.from(
+    { length: 10 },
+    (_, i) => obterAnoAnterior() - i
+  );
   const minYear = Math.min(...requiredYears);
   const maxYear = Math.max(...requiredYears);
 
   const hasAllRequiredYears = (arr, key, isDate = false) =>
     requiredYears.every((year) =>
-      arr.some((item) =>
+      arr?.some((item) =>
         isDate
           ? moment(item[key], "DD/MM/YYYY").year() === year
           : item[key] === year
@@ -60,7 +69,7 @@ import "moment-duration-format";
       .sort((a, b) => b.timestamp - a.timestamp);
 
     const annualDividends = e.dividendHistory.assetEarningsYearlyModels
-      .map(({ rank, value }) => {
+      ?.map(({ rank, value }) => {
         if (typeof rank !== "number" || typeof value !== "number") {
           return null;
         }
@@ -70,7 +79,7 @@ import "moment-duration-format";
       .sort((a, b) => b.year - a.year);
 
     const netProfitHistory = e.netProfitHistory.years
-      .reverse()
+      ?.reverse()
       .map((year, index) => {
         const lucroLiquido = e.netProfitHistory.grid.find(
           (g) => g?.gridLineModel?.key === "LucroLiquido"
@@ -264,7 +273,7 @@ import "moment-duration-format";
   // await fs.writeFile("debug/6.json", JSON.stringify(stocks, null, 2));
 
   // 7º
-  stocks = stocks.slice(0, 5);
+  stocks = stocks.slice(0, 10);
   console.log("7º", stocks.length);
   await fs.writeFile("debug/7.json", JSON.stringify(stocks, null, 2));
 
